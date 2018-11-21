@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  action.api:
+    image: ${DOCKER_REGISTRY}actionapi
+    build:
+      context: .
+      dockerfile: Action.Api/Dockerfile

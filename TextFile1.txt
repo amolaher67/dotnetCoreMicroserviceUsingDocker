@@ -1,0 +1,24 @@
+
+dotnet build
+dotnet run 
+dotnet run --urls "http://*:5050"  - run s ervice on different port
+Install-Package MongoDB.Driver
+RomboMongo - MongoDb UI
+dotnet add package MongoDB.Driver
+dotnet restore
+
+-----------------------------------------------------------------------------------
+
+docker run -p 5672:5672 rabbitmq   - run Rabbitmq on input/output port 5672
+
+docker run -d -p 27017:27017 mongo    -run mongo db on background
+
+docker ps  - see images
+
+docker logs 1f331ce63140f637c6f05536a7f5bac1014778e867d55afb523f9abb462b2166 -- see logs for mongo db id generated when run momgo db
+
+
+docker container kill	Kill one or more running containers
+docker container logs	Fetch the logs of a container
+docker container ls	List containers
+docker container pause	Pause all processes within one or more containers
